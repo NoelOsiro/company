@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from 'next/image';
 
 interface Iprops {
     imageSrc: string;
@@ -18,7 +19,7 @@ const Testimonial: React.FC<Iprops> = (props:Iprops) => {
         <blockquote className="text-left ">
             <div className="relative">
                 <div className="relative">
-                    <img
+                    <Image
                         src={props.imageSrc}
                         alt="aji"
                         className="object-cover w-full h-60 mx-auto rounded-t-2xl"
