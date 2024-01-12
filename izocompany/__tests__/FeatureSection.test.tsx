@@ -1,10 +1,12 @@
+import FeatureSection from '@/app/components/feature';
+import '@testing-library/jest-dom/extend-expect'
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from './App';
 
-describe('App', () => {
+
+describe('FeaturesSection', () => {
   it('renders the app with the initial state', () => {
-    render(<App />);
+    render(<FeatureSection />);
     
     // Example assertions for the initial state
     expect(screen.getByText(/welcome to our app/i)).toBeInTheDocument();
@@ -13,7 +15,7 @@ describe('App', () => {
   });
 
   it('loads data when the "Load Data" button is clicked', async () => {
-    render(<App />);
+    render(<FeatureSection />);
     
     // Example assertions before clicking the button
     expect(screen.queryByText(/data loaded successfully/i)).not.toBeInTheDocument();
@@ -31,7 +33,7 @@ describe('App', () => {
   });
 
   it('handles user input and updates the state', () => {
-    render(<App />);
+    render(<FeatureSection />);
     
     // Example assertions before user input
     expect(screen.getByLabelText(/enter your name/i)).toHaveValue('');

@@ -1,6 +1,9 @@
+/* eslint-env jest */
+import '@testing-library/jest-dom/extend-expect'
+import Hero from '@/app/components/hero';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Hero from './Hero';
+
 
 describe('Hero', () => {
   it('renders the Hero component with initial state', () => {

@@ -1,6 +1,8 @@
 // Navbar.test.tsx
+import '@testing-library/jest-dom/extend-expect'
+import Navbar from '@/app/components/navbar';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Navbar from '../path/to/Navbar';
+
 
 describe('Navbar Component', () => {
   it('renders Navbar component', () => {
