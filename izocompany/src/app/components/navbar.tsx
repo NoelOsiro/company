@@ -39,23 +39,28 @@ const Navbar: React.FC = () => {
                 <ul
                     className="border-t border-gray-100  lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-gray-700 w-full lg:justify-center lg:items-center">
                     <li>
-                        <a href="#" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                        <a href="/" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                        <a href="/services" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
                             Services
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                        <a href="/about" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
                             About us
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                        <a href="/features" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
                             Features
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                            Blog
                         </a>
                     </li>
                 </ul>
