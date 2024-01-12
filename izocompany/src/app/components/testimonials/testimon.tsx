@@ -19,7 +19,7 @@ const Testimonial: React.FC<Iprops> = (props:Iprops) => {
         <blockquote className="text-left ">
             <div className="relative">
                 <div className="relative">
-                    <Image
+                    <img
                         src={props.imageSrc}
                         alt="aji"
                         className="object-cover w-full h-60 mx-auto rounded-t-2xl"
@@ -61,7 +61,7 @@ const TestimonialSwiper: React.FC<TestimonialSwiperProps> = ({ testimonials }) =
                 className="flex-col flex  self-center">
                 {testimonials.map((testimonial, index) => (
                     <SwiperSlide key={index}>
-                        <Testimonial imageSrc={''} content={''} author={''} role={''}/>
+                        <Testimonial imageSrc={testimonial.imageSrc} content={testimonial.content} author={testimonial.author} role={testimonial.role}/>
                     </SwiperSlide>
                 ))}
 

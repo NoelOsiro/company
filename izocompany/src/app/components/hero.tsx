@@ -1,4 +1,8 @@
-import Image from 'next/image'
+'use client'
+import Image from 'next/image';
+import { TypeAnimation } from 'react-type-animation';
+
+
 
 export default function Hero() {
     return (
@@ -15,9 +19,12 @@ export default function Hero() {
             lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
 
                     <h1 className="text-3xl leading-tight sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900">
-                        Social Media <span
-                            className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Marketing</span>
-                        is the Best Ever.
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Marketing</span>
+                    <br/>
+                    <TypeAnimation
+                        sequence={[`Social Media\nMarketing\nis the best ever.`]}
+                        speed={50}
+                        />   
                     </h1>
                     <p className="mt-8 text-gray-700">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores repellat perspiciatis aspernatur
@@ -56,7 +63,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
-                    <Image src="https://agencex-astro.vercel.app/images/image1.webp" alt="Hero image" width="2350" height="2359"
+                    <img src="https://agencex-astro.vercel.app/images/image1.webp" alt="Hero image" width="2350" height="2359"
                         className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96" />
                 </div>
             </div>

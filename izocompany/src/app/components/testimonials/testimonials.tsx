@@ -4,26 +4,26 @@ import TestimonialSwiper from './testimon';
 
 const testimonials = [
     {
-        imageSrc: '',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda officiis sit amet itaque eveniet accusantium corporis tempora.',
+        imageSrc: 'https://th.bing.com/th/id/OIP.jUimOSdvaTim3r94IPbf3QHaGE?rs=1&pid=ImgDetMain',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         author: 'John Doe',
         role: 'Marketing Manager',
     },
     {
-        imageSrc: 'https://scontent.fccj2-2.fna.fbcdn.net/v/t31.18172-8/11262421_868445743194927_5746052500134236265_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=84hLHR-HqyMAX9c9k1y&_nc_ht=scontent.fccj2-2.fna&oh=00_AT_lIRJ3LcWYTagkUdWdrG_eb-iwHbQS_pPNAv7JDcg2Eg&oe=634DB7A3',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda officiis sit amet itaque eveniet accusantium corporis tempora.',
+        imageSrc: 'https://th.bing.com/th/id/OIP.jUimOSdvaTim3r94IPbf3QHaGE?rs=1&pid=ImgDetMain',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         author: 'Ajimon',
         role: 'CEO Of Marketing',
     },
     {
-        imageSrc: '',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda officiis sit amet itaque eveniet accusantium corporis tempora.',
+        imageSrc: 'https://th.bing.com/th/id/OIP.jUimOSdvaTim3r94IPbf3QHaGE?rs=1&pid=ImgDetMain',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         author: '',
         role: '',
     },
     {
-        imageSrc: 'https://scontent.fccj2-2.fna.fbcdn.net/v/t31.18172-8/11262421_868445743194927_5746052500134236265_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=84hLHR-HqyMAX9c9k1y&_nc_ht=scontent.fccj2-2.fna&oh=00_AT_lIRJ3LcWYTagkUdWdrG_eb-iwHbQS_pPNAv7JDcg2Eg&oe=634DB7A3',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda officiis sit amet itaque eveniet accusantium corporis tempora.',
+        imageSrc: 'https://th.bing.com/th/id/OIP.jUimOSdvaTim3r94IPbf3QHaGE?rs=1&pid=ImgDetMain',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         author: 'Ajimon',
         role: 'CEO Of Marketing',
     },
