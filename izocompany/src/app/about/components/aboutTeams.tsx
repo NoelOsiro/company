@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/Image';
 
 const socialLinks = [
   { href: '#', icon: 'mdi mdi-linkedin', color: 'indigo-500' },
@@ -32,7 +31,7 @@ const teamMembers = [
 
 const AboutTeams: React.FC = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white py-48">
+    <div className="flex items-center justify-center min-h-screen bg-white py-2 sm:py-48">
       <div className="flex flex-col">
         <span className="text-center font-bold my-10 opacity-30">
           MDI (npm i @mdi/font) required for all icons
@@ -60,7 +59,7 @@ const AboutTeams: React.FC = () => {
                 <div key={index} className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                   <div className="flex flex-col">
                     <a href="#" className="mx-auto">
-                      <Image alt="navbar-image" className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src={member.image} />
+                      <img alt="navbar-image" className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src={member.image} />
                     </a>
                     <div className="text-center mt-6">
                       <h1 className="text-gray-900 text-xl font-bold mb-1">

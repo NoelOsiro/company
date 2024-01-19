@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Optional: Ensures that padding and border are included in element's total width and height */
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
