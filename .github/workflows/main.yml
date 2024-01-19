@@ -19,10 +19,10 @@ jobs:
           node-version: '20.10.0'
 
       - name: Install Dependencies
-        run: cd izocompany && npm install
+        run: cd izocompany && npm ci
 
       - name: Run Tests
-        run: npm test  # Replace with your test script/command
+        run: cd izocompany && npm run test
 
   build:
     runs-on: ubuntu-latest
@@ -36,10 +36,10 @@ jobs:
       - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: '20.10/0'
+          node-version: '20.10.0'
 
       - name: Install Dependencies
         run: cd izocompany && npm install
 
       - name: Build Next.js App
-        run: npm run build
+        run: cd izocompany && npm build
