@@ -13,16 +13,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Change directory
-        run: cd izocompany
-
       - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
           node-version: '20.10.0'
 
       - name: Install Dependencies
-        run: npm install
+        run: cd izocompany && npm install
 
       - name: Run Tests
         run: npm test  # Replace with your test script/command
@@ -36,16 +33,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Change directory
-        run: cd izocompany
-
       - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
           node-version: '20.10/0'
 
       - name: Install Dependencies
-        run: npm install
+        run: cd izocompany && npm install
 
       - name: Build Next.js App
         run: npm run build
