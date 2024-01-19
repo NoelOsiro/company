@@ -11,13 +11,18 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Change directory
-        run: cd izocompany  # Adjust if needed
+        run: cd izocompany
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.10.0'
 
       - name: Install Dependencies
-        run: npm ci --force
+        run: npm install
 
       - name: Run Tests
         run: npm test  # Replace with your test script/command
@@ -29,13 +34,18 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Change directory
-        run: cd izocompany  # Adjust if needed
+        run: cd izocompany
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.10/0'
 
       - name: Install Dependencies
-        run: npm ci --force
+        run: npm install
 
       - name: Build Next.js App
         run: npm run build
