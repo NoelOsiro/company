@@ -54,8 +54,8 @@ const Navbar: React.FC = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/features" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
-                            Features
+                        <a href="/contacts" className="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                            Contact Us
                         </a>
                     </li>
                     <li>
