@@ -17,7 +17,7 @@ jobs:
         run: cd izocompany
         
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run Tests
         run: npm test  # Replace with your test script/command
