@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/Image';
 
 const AboutHeader: React.FC = () => {
   return (
@@ -35,7 +36,7 @@ const AboutHeader: React.FC = () => {
               </svg>
             </a>
             <div className="rounded-xl overflow-hidden">
-              <img src="https://picsum.photos/800/800" alt="" />
+              <Image src="https://picsum.photos/800/800" alt="" />
             </div>
           </div>
         </div>

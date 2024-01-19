@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/Image';
 
 const AboutMind: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const AboutMind: React.FC = () => {
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
             <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
-              <img className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0" src="https://images.unsplash.com/photo-1630569267625-157f8f9d1a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80" alt="" />
+              <Image className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0" src="https://images.unsplash.com/photo-1630569267625-157f8f9d1a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80" alt="" />
               <div className="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
               <div className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl" aria-hidden="true">
                 <div className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-40" style={{ clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" }}></div>
@@ -18,7 +19,7 @@ const AboutMind: React.FC = () => {
                   <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x="86" />
                 </svg>
                 <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
-                  <p>“"What happens is not as important as how you react to what happens." "The journey of a thousand miles begins with one step." "The only true wisdom is in knowing you know nothing." "Just as treasures are uncovered from the earth, so virtue appears from good deeds, and wisdom appears from a pure and peaceful mind..”</p>
+                  <p>What happens is not as important as how you react to what happens. The journey of a thousand miles begins with one step. The only true wisdom is in knowing you know nothing. Just as treasures are uncovered from the earth, so virtue appears from good deeds, and wisdom appears from a pure and peaceful mind..</p>
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300"><strong className="font-semibold text-white">Shehab Najib,</strong> CEO of ISREN</figcaption>
               </figure>
@@ -29,8 +30,8 @@ const AboutMind: React.FC = () => {
               <p className="text-base font-semibold leading-7 text-yellow-400">wisdom values</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Peaceful minds</h1>
               <div className="max-w-xl">
-                <p className="mt-6">You won't ever have a peaceful mind unless you have a peaceful life and equal times you have a time with your religion then time for fun then time for work and study.</p>
-                <p className="mt-8">Try ignoring problems that are blamed on you but you are sure you didn't make the mistake.</p>
+                <p className="mt-6">You wont ever have a peaceful mind unless you have a peaceful life and equal times you have a time with your religion then time for fun then time for work and study.</p>
+                <p className="mt-8">Try ignoring problems that are blamed on you but you are sure you did not make the mistake.</p>
                 <p className="mt-8">Try dividing your life days into equal times and do everything on its time.</p>
               </div>
             </div>

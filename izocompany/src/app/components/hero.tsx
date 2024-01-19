@@ -2,8 +2,6 @@
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
-
-
 export default function Hero() {
     return (
         <section className="relative py-32 lg:py-36 bg-white">

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/Image';
 
 const socialLinks = [
   { href: '#', icon: 'mdi mdi-linkedin', color: 'indigo-500' },
@@ -49,7 +50,7 @@ const AboutTeams: React.FC = () => {
                   Meet the Team
                 </h1>
                 <p className="text-gray-700 text-lg font-light">
-                  With over 100 years of combined experience, we've got a well-seasoned team at the helm.
+                  With over 100 years of combined experience got a well-seasoned team at the helm.
                 </p>
               </div>
             </div>
@@ -59,7 +60,7 @@ const AboutTeams: React.FC = () => {
                 <div key={index} className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                   <div className="flex flex-col">
                     <a href="#" className="mx-auto">
-                      <img className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src={member.image} />
+                      <Image alt="navbar-image" className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src={member.image} />
                     </a>
                     <div className="text-center mt-6">
                       <h1 className="text-gray-900 text-xl font-bold mb-1">
