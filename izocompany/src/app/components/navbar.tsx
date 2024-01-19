@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
                             className="absolute w-2 h-2 rounded-full bg-gray-900 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
                     </div>
                     <div className="inline-flex text-lg font-semibold text-gray-900">
-                        AgenceX
+                        ISA Co.
                     </div>
                 </a>
             </div>
