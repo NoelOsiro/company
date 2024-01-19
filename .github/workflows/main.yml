@@ -14,8 +14,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Change directory
-        run: cd izocompany
-        
+        run: cd izocompany  # Adjust if needed
+
       - name: Install Dependencies
         run: npm ci
 
@@ -31,8 +31,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Change directory
+        run: cd izocompany  # Adjust if needed
+
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Next.js App
         run: npm run build
