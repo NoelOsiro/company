@@ -17,32 +17,23 @@ export default function Hero() {
             lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
 
                     <h1 className="text-3xl leading-tight sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Marketing</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Empowering Futures</span>
                     <br/>
                     <TypeAnimation
-                        sequence={[`Social Media\nMarketing\nis the best ever.`]}
+                        sequence={[`Enabling Success\n Your Partner in End-to-End Business Solutions.`]}
                         speed={50}
                         />   
                     </h1>
                     <p className="mt-8 text-gray-700">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores repellat perspiciatis aspernatur
-                        quis voluptatum porro incidunt,
-                        libero sequi quos eos velit
+                    Discover unparalleled business support with ISA COMPANIES LTD 
+                    your beacon for comprehensive solutions. We pride ourselves on 
+                    empowering success through innovation and unwavering integrity. At ISA, every challenge
+                    is met strategically, ensuring your journey to excellence is seamless and rewarding
                     </p>
                     <div className="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
                         <div className="flex sm:flex-row flex-col gap-5 w-full">
-                            <form action="#"
-                                className="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-gray-600 shadow-lg shadow-gray-200/20
-                            border border-gray-200 bg-gray-100 rounded-full ease-linear focus-within:bg-white  focus-within:border-blue-600">
-                                <span className="min-w-max pr-2 border-r border-gray-200">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24"
-                                        strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                            d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
-                                    </svg>
-                                </span>
-                                <input type="email" name="" id="" placeholder="johndoe@gmail.com"
-                                    className="w-full py-3 outline-none bg-transparent" />
+                            <div
+                                className="py-1 pl-6 w-full pr-1 flex gap-3 items-center rounded-full ease-linear focus-within:bg-white  focus-within:border-blue-600">
                                 <button className="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
                                 after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#172554] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
                                     <span className="hidden sm:flex relative z-[5]">
@@ -56,7 +47,7 @@ export default function Hero() {
                                         </svg>
                                     </span>
                                 </button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
