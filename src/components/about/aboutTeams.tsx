@@ -1,47 +1,11 @@
+import { teamMembers, socialLinks } from '@/data/about/aboutPage';
 import React from 'react';
-
-const socialLinks = [
-  { href: '#', icon: 'mdi mdi-linkedin', color: 'indigo-500' },
-  { href: '#', icon: 'mdi mdi-twitter', color: 'blue-300' },
-  { href: '#', icon: 'mdi mdi-instagram', color: 'orange-400' },
-];
-
-const teamMembers = [
-  {
-    name: 'Tranter Jaskulski',
-    title: 'Founder & Specialist',
-    image: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
-  },
-  {
-    name: 'Denice Jagna',
-    title: 'Tired & M. Specialist',
-    image: 'https://images.unsplash.com/photo-1634896941598-b6b500a502a7?fit=clamp&w=400&h=400&q=80',
-  },
-  {
-    name: 'Kenji Milton',
-    title: 'Team Member',
-    image: 'https://images.unsplash.com/photo-1634193295627-1cdddf751ebf?fit=clamp&w=400&h=400&q=80',
-  },
-  {
-    name: 'Doesn\'t matter',
-    title: 'Will be fired',
-    image: 'https://images.unsplash.com/photo-1635003913011-95971abba560?fit=clamp&w=400&h=400&q=80',
-  },
-];
 
 const AboutTeams: React.FC = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-white py-2 sm:py-48">
       <div className="flex flex-col">
-        <span className="text-center font-bold my-10 opacity-30">
-          MDI (npm i @mdi/font) required for all icons
-          <hr className="my-4" />
-          <a href="https://egoistdeveloper.github.io/twcss-to-sass-playground/" target="_blank" className="text-blue-600">
-            Convert to SASS
-          </a>
-        </span>
-
-        <div className="flex flex-col mt-8">
+        <div className="flex flex-col mt-4">
           <div className="container max-w-7xl px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
@@ -49,7 +13,7 @@ const AboutTeams: React.FC = () => {
                   Meet the Team
                 </h1>
                 <p className="text-gray-700 text-lg font-light">
-                  With over 100 years of combined experience got a well-seasoned team at the helm.
+                  With over 15 years of combined experience, we have a well-seasoned team at the helm.
                 </p>
               </div>
             </div>

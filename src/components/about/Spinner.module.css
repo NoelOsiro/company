@@ -1,0 +1,17 @@
+/* Spinner.css */
+#spin {
+}
+
+#spin:after {
+    content: "";
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% { content: "marketing"; }
+    20% { content: "content"; }
+    40% { content: "engineering"; }
+    60% { content: "crypto"; }
+    80% { content: "consulting"; }
+    100% { content: "business"; }
+}
