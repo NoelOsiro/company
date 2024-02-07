@@ -1,3 +1,4 @@
+import { heroBtmData } from "@/data/main/mainPage";
 import React from "react";
 
 export default function HeroBottom() {
@@ -39,13 +40,10 @@ export default function HeroBottom() {
                         </div>
                     <div>
                         <div className="pl-12">
-                            <h2 className="text-5xl font-medium mb-6">Constant and Never Ending Improvement</h2>
-                            <h3 className="text-2xl font-medium mb-6">Committed to providing a stress-free business experience with superior services that cater for our customers</h3>
-                            <p className="mb-6 text-gray-400">
-                                Individual and/or corporate needs always conveying the <strong>“Constant and Never Ending Improvement‟</strong> spirit mixed with passion for excellence and exceeding client expectations.
-                                <br />
-                            </p>
-                            <h3 className="mb-4 font-semibold text-xl text-gray-400"> <strong>Our Motto: “Business solutions”</strong></h3>
+                            <h2 className="text-5xl font-medium mb-6">{heroBtmData.title}</h2>
+                            <h3 className="text-2xl font-medium mb-6">{heroBtmData.description}</h3>
+                            {heroBtmData.text}
+                            <h3 className="mb-4 font-semibold text-xl text-gray-400"> <strong>{heroBtmData.motto}</strong></h3>
                             <div className="grid grid-cols-2 gap-6 justify-between mb-3">
                                 {icons.map((icon, index) => (
                                     <React.Fragment key={index}>

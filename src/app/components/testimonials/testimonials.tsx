@@ -1,33 +1,9 @@
+import { testimonials } from '@/data/main/mainPage';
 import TestHeader from './testHeader';
 import SocialLinks from './testSocials';
 import TestimonialSwiper from './testimon';
 
-const testimonials = [
-    {
-        imageSrc: 'https://th.bing.com/th/id/OIP.jUimOSdvaTim3r94IPbf3QHaGE?rs=1&pid=ImgDetMain',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        author: 'John Doe',
-        role: 'Marketing Manager',
-    },
-    {
-        imageSrc: 'https://th.bing.com/th/id/OIP.jUimOSdvaTim3r94IPbf3QHaGE?rs=1&pid=ImgDetMain',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        author: 'Ajimon',
-        role: 'CEO Of Marketing',
-    },
-    {
-        imageSrc: 'https://th.bing.com/th/id/OIP.jUimOSdvaTim3r94IPbf3QHaGE?rs=1&pid=ImgDetMain',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        author: '',
-        role: '',
-    },
-    {
-        imageSrc: 'https://th.bing.com/th/id/OIP.jUimOSdvaTim3r94IPbf3QHaGE?rs=1&pid=ImgDetMain',
-        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        author: 'Ajimon',
-        role: 'CEO Of Marketing',
-    },
-];
+
 
 const Testimonials = () => {
     return (

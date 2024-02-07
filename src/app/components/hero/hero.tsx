@@ -1,6 +1,8 @@
 'use client'
+import { heroData } from '@/data/main/mainPage';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+
 
 export default function Hero() {
     return (
@@ -17,19 +19,14 @@ export default function Hero() {
             lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
 
                     <h1 className="text-3xl leading-tight sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Empowering Futures</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">{heroData.title}</span>
                     <br/>
                     <TypeAnimation
-                        sequence={[`Enabling Success\n Your Partner in End-to-End Business Solutions.`]}
+                        sequence={heroData.subtitle}
                         speed={50}
                         />   
                     </h1>
-                    <p className="mt-8 text-gray-700">
-                    Discover unparalleled business support with ISA COMPANIES LTD 
-                    your beacon for comprehensive solutions. We pride ourselves on 
-                    empowering success through innovation and unwavering integrity. At ISA, every challenge
-                    is met strategically, ensuring your journey to excellence is seamless and rewarding
-                    </p>
+                    <p className="mt-8 text-gray-700">{heroData.description}</p>
                     <div className="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
                         <div className="flex sm:flex-row flex-col gap-5 w-full">
                             <div
@@ -37,7 +34,7 @@ export default function Hero() {
                                 <button className="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
                                 after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#172554] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
                                     <span className="hidden sm:flex relative z-[5]">
-                                        Get Started
+                                        {heroData.buttonText}
                                     </span>
                                     <span className="flex sm:hidden relative z-[5]">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -52,7 +49,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
-                    <img src="https://agencex-astro.vercel.app/images/image1.webp" alt="Hero image" width="2350" height="2359"
+                    <img src={heroData.imageUrl} alt="Hero image" width="2350" height="2359"
                         className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96" />
                 </div>
             </div>
