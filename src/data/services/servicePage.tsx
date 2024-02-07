@@ -1,26 +1,4 @@
-import React from 'react';
-
-interface Iprops {
-  color: string;
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}
-
-const HeroSectionCard: React.FC<Iprops> = ({ color, icon, title, description }: Iprops) => {
-  return (
-    <div className={`p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 cursor-pointer`}>
-      <span className={`p-5 rounded-full bg-${color}-500 text-white shadow-lg shadow-${color}-200`}>
-        {icon}
-      </span>
-      <p className="text-xl font-medium text-slate-700 mt-3">{title}</p>
-      <p className="mt-2 text-sm text-slate-500">{description}</p>
-    </div>
-  );
-};
-
-const HeroSection: React.FC = () => {
-  const heroCards = [
+export const heroCards = [
     {
       color: 'red',
       icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>,
@@ -58,24 +36,19 @@ const HeroSection: React.FC = () => {
       description: 'Visa process by helping you create the necessary documentation.',
     },
   ];
-  
 
-  return (
-    <div className="px-3 md:lg:xl:px-40 border-t border-b py-20 bg-opacity-10 " style={{ backgroundImage: 'url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png")' }}>
-      <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-white shadow-xl shadow-neutral-100 border mt-3 md:mt-2 sm:mt-1 ">
-        {heroCards.map((card, index) => (
-          <HeroSectionCard key={index} {...card} />
-        ))}
-      </div>
-      <div className="w-full bg-indigo-600 shadow-xl shadow-indigo-200 py-10 px-20 flex justify-between items-center">
-        <p className="text-white">
-          <span className="text-4xl font-medium">Still Confused ?</span> <br />
-          <span className="text-lg">Book For Free Career Consultation Today ! </span>
-        </p>
-        <button className="px-5 py-3 font-medium text-slate-700 shadow-xl hover:bg-white duration-150 bg-yellow-400">BOOK AN APPOINTMENT </button>
-      </div>
-    </div>
-  );
-};
+// Data for feature items
+export const featureItemsData = [
+    { color: 'red', title: 'Push to deploy.', content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.' },
+    { color: 'yellow', title: 'SSL certificates.', content: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.' },
+    { color: 'orange', title: 'Database backups.', content: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.' },
+];
 
-export default HeroSection;
+// Text content for the main section
+export const mainSectionText = {
+    title: 'Deploy faster',
+    subtitle: 'A better workflow',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    featureImageSrc : 'https://repository-images.githubusercontent.com/130268121/b4fd5300-b585-11ea-8718-1e141e78842e'
+};  
+

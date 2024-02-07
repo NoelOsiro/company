@@ -1,4 +1,4 @@
-import FeatureSection from '@/app/components/feature/feature';
+import FeatureSection from '@/components/app/feature/feature';
 import '@testing-library/jest-dom/extend-expect'
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';

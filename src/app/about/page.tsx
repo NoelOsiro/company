@@ -1,8 +1,8 @@
 
-import AboutCTA from './components/aboutCTA'
-import AboutTeams from './components/aboutTeams'
-import AboutHeader from './components/aboutheader'
-import AboutMind from './components/aboutmind'
+import AboutCTA from '../../components/about/aboutCTA'
+import AboutTeams from '../../components/about/aboutTeams'
+import AboutHeader from '../../components/about/aboutheader'
+import AboutMind from '../../components/about/aboutmind'
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import HeroSection from './components/HeroSection'
-import FeaturesSection from './components/FeatureSection'
+import HeroSection from '@/components/services/HeroSection'
+import FeaturesSection from '@/components/services/FeatureSection'
 
 export default function Home() {
   return (
