@@ -2,7 +2,6 @@
 import { render, screen } from '@testing-library/react';
 import Hero from '@/components/app/hero/hero';
 import '@testing-library/jest-dom/extend-expect';
-import { heroData } from '../src/data/main/mainPage';
 
 // Mocking the react-type-animation library
 jest.mock('react-type-animation', () => ({
