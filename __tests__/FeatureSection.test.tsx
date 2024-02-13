@@ -2,7 +2,6 @@
 import { render, screen } from '@testing-library/react';
 import FeatureSection from '@/components/app/feature/feature';
 import '@testing-library/jest-dom/extend-expect';
-import { featureIcons, featureItems } from '../src/data/main/mainPage';
 
 interface FeatureItem {
   icon: React.ReactNode;
