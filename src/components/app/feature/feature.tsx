@@ -40,22 +40,26 @@ export default function FeatureSection() {
                             </div>
                         ))}
                     </div>
-
                     {/* Right column with feature image (hidden on small screens) */}
-                    <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
+                    <div className="hidden lg:flex flex-col lg:items-center lg:w-1/2 lg:justify-center">
                         <img
                             alt='feature image'
-                            className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full"
-                            src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80"
+                            className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full mb-8"
+                            src="https://source.unsplash.com/random/?office,nairobi"
                         />
+                        <img
+                            alt='feature image'
+                            className="w-[18rem] h-[18rem] object-cover xl:w-[24rem] xl:h-[24rem] rounded-full ml-auto"
+                            src="https://source.unsplash.com/random/?office,savannah"
+                        />
+                        
                     </div>
+                    
                 </div>
-
                 {/* Horizontal line separator */}
                 <hr className="border-gray-200 my-12 dark:border-gray-700" />
-
                 {/* Grid of feature icons */}
-                <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+                <div className="hidden grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                     {featureIcons.map((icon, index) => (
                         <div
                             key={index}
