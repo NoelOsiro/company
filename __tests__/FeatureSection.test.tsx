@@ -1,51 +1,60 @@
+// featureSection.test.tsx
+import { render, screen } from '@testing-library/react';
 import FeatureSection from '@/components/app/feature/feature';
-import '@testing-library/jest-dom/extend-expect'
-import { render, screen, fireEvent } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom/extend-expect';
+import { featureIcons, featureItems } from '../src/data/main/mainPage';
 
+interface FeatureItem {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
 
-describe('FeaturesSection', () => {
-  it('renders the app with the initial state', () => {
+jest.mock('../src/data/main/mainPage', () => ({
+  featureIcons: [
+    {
+      svg: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+      </svg>,
+    },
+  ],
+  featureItems: [
+    {
+      icon: <div>Mock Icon</div>,
+      title: 'Mock Feature Title',
+      description: 'Mock Feature Description',
+    },
+    {
+      icon: <div>Mock Icon 1</div>,
+      title: 'Mock Feature Title 1',
+      description: 'Mock Feature Description 1',
+    },
+    {
+      icon: <div>Mock Icon 2</div>,
+      title: 'Mock Feature Title 2',
+      description: 'Mock Feature Description 2',
+    },
+  ],
+}));
+
+describe('FeatureSection', () => {
+  it('renders the feature section with the correct data', () => {
     render(<FeatureSection />);
     
     // Example assertions for the initial state
-    expect(screen.getByText(/welcome to our app/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /load data/i })).toBeInTheDocument();
+    expect(screen.getByText(/Explore our/i)).toBeInTheDocument();
+    
+    // Mocked feature item data
+    const mockedFeatureItem: FeatureItem = {
+      icon: <div>Mock Icon</div>,
+      title: 'Mock Feature Title',
+      description: 'Mock Feature Description',
+    };
+
+    // Check if the feature item is rendered
+    expect(screen.getByText(mockedFeatureItem.title)).toBeInTheDocument();
+    expect(screen.getByText(mockedFeatureItem.description)).toBeInTheDocument();
     // Add more assertions based on your initial state
-  });
-
-  it('loads data when the "Load Data" button is clicked', async () => {
-    render(<FeatureSection />);
-    
-    // Example assertions before clicking the button
-    expect(screen.queryByText(/data loaded successfully/i)).not.toBeInTheDocument();
-
-    // Click the "Load Data" button
-    userEvent.click(screen.getByRole('button', { name: /load data/i }));
-
-    // Wait for the asynchronous data loading
-    // Adjust the time or use mock data and mock functions as needed
-    await screen.findByText(/data loaded successfully/i);
-
-    // Example assertions after clicking the button
-    expect(screen.getByText(/data loaded successfully/i)).toBeInTheDocument();
-    // Add more assertions based on the expected behavior after loading data
-  });
-
-  it('handles user input and updates the state', () => {
-    render(<FeatureSection />);
-    
-    // Example assertions before user input
-    expect(screen.getByLabelText(/enter your name/i)).toHaveValue('');
-    expect(screen.queryByText(/hello,/i)).not.toBeInTheDocument();
-
-    // Type a name into the input field
-    userEvent.type(screen.getByLabelText(/enter your name/i), 'John');
-
-    // Example assertions after user input
-    expect(screen.getByLabelText(/enter your name/i)).toHaveValue('John');
-    expect(screen.getByText(/hello, john/i)).toBeInTheDocument();
-    // Add more assertions based on the expected behavior after user input
   });
 
   // Add more test cases for other components, interactions, and edge cases as needed

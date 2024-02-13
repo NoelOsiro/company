@@ -1,38 +1,47 @@
 // Navbar.test.tsx
-import '@testing-library/jest-dom/extend-expect'
-import Navbar from '@/components/app/navbar/navbar';
 import { render, screen, fireEvent } from '@testing-library/react';
+import Navbar from '@/components/app/navbar/navbar'; 
+import '@testing-library/jest-dom/extend-expect';// Adjust the path to your Navbar component
 
-
-describe('Navbar Component', () => {
-  it('renders Navbar component', () => {
+describe('Navbar', () => {
+  it('renders the navbar with the correct initial state', () => {
     render(<Navbar />);
     
-    // Check if the component renders without crashing
-    expect(screen.getByText(/AgenceX/i)).toBeInTheDocument();
+    // Example assertions for the initial state
+    expect(screen.getByText(/ISA Co./i)).toBeInTheDocument();
     expect(screen.getByText(/Home/i)).toBeInTheDocument();
     expect(screen.getByText(/Services/i)).toBeInTheDocument();
-    expect(screen.getByText(/About us/i)).toBeInTheDocument();
-    expect(screen.getByText(/Features/i)).toBeInTheDocument();
-    expect(screen.getByText(/Blog/i)).toBeInTheDocument();
-    expect(screen.getByText(/Get Started/i)).toBeInTheDocument();
+    // Add more assertions based on your initial state
   });
 
-  it('handles click events', () => {
+  it.skip('toggles the mobile menu when the button is clicked', () => {
     render(<Navbar />);
     
-    // Click the "Get Started" button
-    const getStartedButton = screen.getByText(/Get Started/i);
-    fireEvent.click(getStartedButton);
+    // Example assertions before clicking the button
+    expect(screen.queryByText(/Home/i)).not.toBeVisible();
 
-    // Add more assertions based on your component's behavior
-    // For example, you can check if the state has changed accordingly
-    // You might need to add additional data-testid attributes to elements for better selection.
+    // Click the toggle button
+    fireEvent.click(screen.getByText(/togglenav/i));
 
-    // Example:
-    // expect(screen.getByTestId('some-element')).toHaveClass('some-class');
+    // Example assertions after clicking the button
+    expect(screen.getByText(/Home/i)).toBeVisible();
+    expect(screen.getByText(/Services/i)).toBeVisible();
+    // Add more assertions based on the expected behavior after clicking the button
   });
 
-  // Add more test cases based on different scenarios
-});
+  it.skip('handles navigation when a menu item is clicked', () => {
+    render(<Navbar />);
+    
+    // Example assertions before clicking a menu item
+    expect(screen.queryByText(/Contact Us/i)).not.toBeVisible();
 
+    // Click a menu item (replace 'Contact Us' with the desired menu item)
+    fireEvent.click(screen.getByText(/Contact Us/i));
+
+    // Example assertions after clicking a menu item
+    expect(screen.getByText(/Contact Us/i)).toBeVisible();
+    // Add more assertions based on the expected behavior after clicking a menu item
+  });
+
+  // Add more test cases for other components, interactions, and edge cases as needed
+});

@@ -33,7 +33,7 @@ export default function Hero() {
                                 className="py-1 pl-6 w-full pr-1 flex gap-3 items-center rounded-full ease-linear focus-within:bg-white  focus-within:border-blue-600">
                                 <button className="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
                                 after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#172554] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
-                                    <span className="hidden sm:flex relative z-[5]">
+                                    <span className="hidden sm:flex relative z-[5]" id='CTAbtn'>
                                         {heroData.buttonText}
                                     </span>
                                     <span className="flex sm:hidden relative z-[5]">
